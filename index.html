@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <!-- Background Video -->
+    <video class="video-bg" autoplay muted loop>
+        <source id="myvideos" src="wave2.mp4" type="video/mp4">
+    </video>
+
+    <div>
+        <h2>My Calculator</h2>        
+    </div>
+    <div class="calculator">
+        <input type="text" name="txtdisplay" id="txtdisplay" placeholder="0">
+        <div class="div1">
+
+            <button type="button" onclick="Myclear()">C</button>
+            <button type="button" onclick="btnClick(this)">/</button>
+            <button type="button" onclick="btnClick(this)">*</button>
+            <button type="button" onclick="myDel()">DEL</button>
+
+            <button type="button" onclick="btnClick(this)">7</button>
+            <button type="button" onclick="btnClick(this)">8</button>
+            <button type="button" onclick="btnClick(this)">9</button>
+            <button type="button" onclick="btnClick(this)">-</button>
+
+            <button type="button" onclick="btnClick(this)">4</button>
+            <button type="button" onclick="btnClick(this)">5</button>
+            <button type="button" onclick="btnClick(this)">6</button>
+            <button type="button" onclick="btnClick(this)">+</button>
+
+            <button type="button" onclick="btnClick(this)">1</button>
+            <button type="button" onclick="btnClick(this)">2</button>
+            <button type="button" onclick="btnClick(this)">3</button>
+            <button type="button" onclick="equal()">=</button>
+
+            <button type="button" style="grid-column: span 2;" onclick="btnClick(this)">0</button>
+            <button type="button" onclick="btnClick(this)">.</button>
+            <button type="button" onclick="btnClick(this)">%</button>
+        </div>
+    </div>
+    <div class="mode" >
+        <div style="float: right;width: 100%;">            
+                <button class="btn1" onclick="MyTheme(1)"> Theme-1</button> 
+                <button class="btn1" onclick="MyTheme(2)"> Theme-2</button> 
+                <button class="btn1" onclick="MyTheme(3)"> Theme-3</button>               
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
